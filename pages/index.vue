@@ -22,7 +22,11 @@ pre {
                 my test of deployment <a href="http://nuxtjs.org/">nuxt.js</a> and <a href="https://github.com/zeit/micro">micro</a> to <a href="https://zeit.co/home">now.sh</a>.
             </p>
             <p>
-                API Response:<br>
+                secret env:
+                <pre>{{ secret }}</pre>
+            </p>
+            <p>
+                API Response:
                 <pre>{{ apiData }}</pre>
             </p>
         </main>
@@ -37,6 +41,11 @@ export default {
     data: () => ({
         apiData: null,
     }),
+    computed: {
+        secret() {
+            return process.env.SECRET_ENV;
+        },
+    },
     async mounted() {
         this.apiData = (await axios.get('/api')).data;
     },

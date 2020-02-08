@@ -5,4 +5,7 @@ export default {
     serverMiddleware: [
         {path: '/api', handler: '~/api'},
     ],
+    env: {
+        SECRET_ENV: process.env.SECRET_ENV,
+    },
 };
