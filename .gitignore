@@ -1,0 +1,5 @@
+.now
+.now_cache
+.nuxt
+node_modules
+node_modules_dev

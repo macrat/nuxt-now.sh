@@ -1,0 +1,20 @@
+{
+  "name": "nuxt-now.sh",
+  "version": "1.0.0",
+  "description": "my test of deployment nuxt.js to now.sh",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nuxt dev",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "MacRat <m@crat.jp> (https://blanktar.jp)",
+  "repository": "github:macrat/nuxt-now.sh",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "micro": "^9.3.4",
+    "nuxt": "^2.11.0"
+  }
+}
