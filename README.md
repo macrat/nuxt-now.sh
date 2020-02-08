@@ -1,4 +1,4 @@
-zeit-serverless-test
-====================
+nuxt-now.sh
+===========
 
-My test of zeit.co
+My test deployment [nuxt.js](http://nuxtjs.org/) and [micro](https://github.com/zeit/micro) to [now.sh](https://zeit.co/home)
